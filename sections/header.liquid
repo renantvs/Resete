@@ -109,7 +109,7 @@
   			$.getJSON( "https://myip.wtf/json", function(localizacao) {
 				var localclientdropmeta = localizacao['YourFuckingLocation'];
 				var regiaoclientdropmeta = localclientdropmeta.replace(", Brazil", "");
-				$("#client_name_end").html("Frete grátis para  " + regiaoclientdropmeta + " e Região");
+				$("#client_name_end").html("Black Friday! Frete grátis para " + regiaoclientdropmeta + " e Região");
 		    });
    
 </script>
@@ -582,7 +582,7 @@
              {%- for link in navigation_menu.links -%}
               <li class="nav-bar__item">
                 {%- if link.links.size == 0 -%}
-                  <a href="{{ link.url }}" class="nav-bar__link link" data-type="menuitem">{{ link.title }}</a>
+                  <a href="{{ link.url }}" class="nav-bar__link link-footer" data-type="menuitem">{{ link.title }}</a>
                 {%- else -%}
                   <a href="{{ link.url }}" class="nav-bar__link link" data-type="menuitem" aria-expanded="false" aria-haspopup="true">
                     {{- link.title -}}

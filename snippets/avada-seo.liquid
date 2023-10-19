@@ -1,3 +1,4 @@
+{%- capture avada-seo-snippets -%}
 {% include 'avada-seo-status' %}
 {%- if avadaSeoStatus -%}
 {% include 'avada-seo-meta' %}
@@ -6,4 +7,10 @@
 {% include 'avada-seo-other' %}
 {% include 'avada-seo-structured' %}
 {% include 'avada-seo-redirect' %}
+{% include 'avada-seo-local-business' %}
+{% include 'avada-seo-script-manager' %}
 {%- endif -%}
+{%- endcapture -%}
+{%- unless avada-seo-snippets contains 'Liquid error' -%}
+{{ avada-seo-snippets }}
+{%- endunless -%}

@@ -46,21 +46,66 @@
         <h1 class="product-meta__title heading h1">{{ product.title }} <span class="verification__stamp"></span></h1>
             
       <div style="margin-top: -5px;font-size:13px;color: #b7b7b7;">
-        <span class="product-meta__sku-number">(Cód. Item {{ product.id | divided_by: 220022 }})</span> 
+        <!--<span class="product-meta__sku-number">(Cód. Item {{ product.id | divided_by: 220022 }})</span> 
                             <span class="quantitysell" style="color: #3A2A2F;"> | </span>
-                    <span class="quantitysell" style="color: #0086ff;">Disponível em estoque.</span>
+                    <span class="quantitysell" style="color: #0086ff;">Disponível em estoque.</span>-->
 
       <a href="#looxReviews">
 	<div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}">
 	</div>
 </a>
-        
+      <br>
+      
       <!-- QUEIMA DE ESTOQUE INICIO -->
-      
-      {%- if section.settings.mostrar_barra_de_entrega -%}
 
-      <div style="margin-bottom: 15px; margin-top: 4px" class="product-meta__reference"><span style="color:#0086ff; font:14px; background:#dff0ff; padding:4px 10px; border-radius:3px;">Vendido e enviado pela <span style="font-weight: 800;">{{ shop.name }}©</span></span></div>
-      
+      {%- if section.settings.show_vendor or section.settings.show_sku -%}
+        <div class="product-meta__reference">
+          {%- if section.settings.show_vendor -%}
+            {%- assign vendor_handle = product.vendor | handle -%}
+            {%- assign collection_for_vendor = collections[vendor_handle] -%}
+
+            {%- unless collection_for_vendor.empty? -%}
+           
+          <span class="quantitysell" style="color: #000; margin-right: 2px;">Desconto de </span>
+         <span style="color:#0A1C3B; font:14px; background:#ffe000; padding:5px 10px; border-radius:3px;">QUEIMA DE ESTOQUE!</span>
+ 
+            {%- else -%}
+  <span style="color:#FFFF; font:14px; background:#03264E; padding:5px 10px; border-radius:3px; font-weight: bold;">QUEIMA DE ESTOQUE!</span>
+            {%- endunless -%}
+          {%- endif -%}
+
+          {%- if section.settings.show_vendor -%}
+            {%- assign vendor_handle = product.vendor | handle -%}
+            {%- assign collection_for_vendor = collections[vendor_handle] -%}
+
+            {%- unless collection_for_vendor.empty? -%}
+           
+          <span class="quantitysell" style="color: #000; margin-right: 2px;">Desconto de </span>
+         <span style="color:#0A1C3B; font:14px; background:#ffe000; padding:5px 10px; border-radius:3px;">BLACK FRIDAY!🔥</span>
+ 
+            {%- else -%}
+  <span style="color:#0A1C3B; font:14px; background:#ffe000; padding:5px 10px; border-radius:3px; font-weight: bold;">BLACK FRIDAY!🔥</span>
+            {%- endunless -%}
+          {%- endif -%}
+          
+<!--<br>
+                    <span class="quantitysell" style="color: #000; margin-right: 2px;">Desconto de </span>
+          <span style="color:#e7b300; font:14px Poppins, sans-serif; background:#000; padding:4px 10px; border-radius:3px;">BLACK FRIDAY!⚡</span>-->
+
+          {%- if section.settings.show_sku -%}
+         
+          <!--{% if selected_variant.barcode != blank %}
+            <span style="font-style: italic" class="product-meta__sku">
+              (Cód. Item <span class="product-meta__sku-number">{{ selected_variant.barcode }})</span>
+            </span>
+          {% endif %}-->
+          
+         <!-- <span style="font-style: italic;margin-left: 5px" class="product-meta__sku">
+              (Cód. Item <span class="product-meta__sku-number" style="font-style: italic;">{{ product.id | divided_by: 220022 }})</span>
+            </span>-->
+                    
+          {%- endif -%}
+        </div>
       {%- endif -%}
 
       <!-- QUEIMA DE ESTOQUE FINAL -->
@@ -106,40 +151,10 @@
 
 
       {%- if section.settings.show_vendor or section.settings.show_sku -%}
-        <div class="product-meta__reference">
-          {%- if section.settings.show_vendor -%}
-            {%- assign vendor_handle = product.vendor | handle -%}
-            {%- assign collection_for_vendor = collections[vendor_handle] -%}
-
-            {%- unless collection_for_vendor.empty? -%}
-           
-          <span class="quantitysell" style="color: #000; margin-right: 2px;">Desconto de </span>
-         <span style="color:#e7b300; font:14px; background:#000; padding:4px 10px; border-radius:3px;">QUEIMA DE ESTOQUE BLACK FRIDAY!🔥</span>
- 
-            {%- else -%}
-  <span style="color:#e7b300; font:14px; background:#000; padding:4px 10px; border-radius:3px;">QUEIMA DE ESTOQUE BLACK FRIDAY!🔥</span>
-            {%- endunless -%}
-          {%- endif -%}
-          
-<!--<br>
-                    <span class="quantitysell" style="color: #000; margin-right: 2px;">Desconto de </span>
-          <span style="color:#e7b300; font:14px Poppins, sans-serif; background:#000; padding:4px 10px; border-radius:3px;">BLACK FRIDAY!⚡</span>-->
-
-          {%- if section.settings.show_sku -%}
-         
-          <!--{% if selected_variant.barcode != blank %}
-            <span style="font-style: italic" class="product-meta__sku">
-              (Cód. Item <span class="product-meta__sku-number">{{ selected_variant.barcode }})</span>
-            </span>
-          {% endif %}-->
-          
-         <!-- <span style="font-style: italic;margin-left: 5px" class="product-meta__sku">
-              (Cód. Item <span class="product-meta__sku-number" style="font-style: italic;">{{ product.id | divided_by: 220022 }})</span>
-            </span>-->
-                    
-          {%- endif -%}
+        <div style="margin-bottom: 15px; margin-top: 4px" class="product-meta__reference">
+          <span style="color:#000; font:14px; background:#ffff; padding:4px 10px; border-radius:3px;font-weight: 800;">Disponível em estoque</span>
         </div>
-      {%- endif -%}
+    {%- endif -%}    
 
       {%- if section.settings.show_reviews_badge -%}
         <a href="{% if template.name != 'product' or template == 'product.quick-view' %}{{ product.url | within: collection }}{% endif %}#product-reviews" class="product-meta__reviews-badge link" data-offset="30">
@@ -395,11 +410,11 @@
               
               {%- else -%}
                 <span class="price">{{ selected_variant.price | money_without_trailing_zeros }}</span>
-           {%- endif -%} 
+           {%- endif -%}
               
           <!-- JUROS -->
               
-<p style="color: #black; margin: 5px 0px 0px 0px;">em até 12x de <span style="font-size:15px; color: var(--product-on-sale-accent);"><b>{{- selected_variant.price | divided_by: 12 | times: 1.2375 | money -}}</b></span></p>
+            <p style="color: #black; margin: 5px 0px 0px 0px;">em até 12x de <span style="font-size:15px; color: var(--product-on-sale-accent);"><b>{{- selected_variant.price | divided_by: 12 | times: 1.2375 | money -}}</b></span></p>
               
             {%- if selected_variant.compare_at_price > selected_variant.price -%}
               <div class="product-meta__label-list">
@@ -1054,34 +1069,35 @@
         <div class="product-form__info-item">
           <span class="product-form__info-title text--strong">{{ 'product.form.price' | t }}:</span>
 
-          <div class="product-form__info-content">
-            <div class="price-list">
- {%- if selected_variant.compare_at_price > selected_variant.price -%}
-              <span class="price price--compare">
-                  <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
-                  {{- selected_variant.compare_at_price | money_without_trailing_zeros -}}
-                </span>  
-              <br>
-              <span class="price price--highlight">
+            <div class="product-form__info-content">
+              <div class="price-list">
+                <span style="margin-left: 25px;" class="price price--highlight">
                   <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
                   {{- selected_variant.price | money_without_trailing_zeros -}}
                 </span>
-				{%- assign savings = selected_variant.compare_at_price | minus: selected_variant.price | times: 100.0 | divided_by: selected_variant.compare_at_price | round | append: '%' -%}
-				<div class="discount__percentage"style="display:none !important;">
-              		{{ savings }} OFF
-              	</div>
+                {%- if selected_variant.compare_at_price > selected_variant.price -%}
+                <span class="price price--compare">
+                    <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
+                {{- selected_variant.compare_at_price | money_without_trailing_zeros -}}
+                </span>  
+                <br>
               
-              {%- else -%}
-                <span class="price">{{ selected_variant.price | money_without_trailing_zeros }}</span>
-           {%- endif -%} 
+				        {%- assign savings = selected_variant.compare_at_price | minus: selected_variant.price | times: 100.0 | divided_by: selected_variant.compare_at_price | round | append: '%' -%}
+				        <div class="discount__percentage"style="display:none !important;">
+              	{{ savings }} OFF
+                </div>
               
-          <!-- JUROS -->
+                {%- else -%}
+                  <!--<span class="price">{{ selected_variant.price | money_without_trailing_zeros }}</span>-->
+            {%- endif -%} 
               
-<p style="color: #black; margin: 5px 0px 0px 0px;">em até 12x de <span style="font-size:15px; color: var(--product-on-sale-accent);"><b>{{- selected_variant.price | divided_by: 12 | times: 1.2375 | money -}}</b></span></p>
+           <!-- JUROS -->
+              
+              <p style="color: #black; margin: 5px 0px 0px 0px; margin-left: 25px;"><b>em até 12x</b> de <span style="font-size:15px; color: #black;"><b>{{- selected_variant.price | divided_by: 12 | times: 1.2375 | money -}}</b></span></p>
               
             {%- if selected_variant.compare_at_price > selected_variant.price -%}
               <div class="product-meta__label-list">
-            <span style="margin-top: 0px; font-size: 14px;font-size: 14px" class="product-label product-label--on-sale">
+            <span style="margin-top: 0px; font-size: 14px; margin-left: 25px;" class="product-label product-label--on-sale">
               Economize&nbsp; {{ product.compare_at_price | minus: product.price | money_without_trailing_zeros }}
                 </span></div>{%- endif -%}</div>
             
