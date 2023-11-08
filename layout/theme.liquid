@@ -123,8 +123,6 @@
 	{{ shop.metafields.loox["global_html_head"] }}
     
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
-{% include 'alireviews_core' %} 
- 
 {% render 'gsf-conversion-pixels' %}
   {% include 'disable-right-click' %}
 </head> 
@@ -155,6 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {%- endif -%}
 
     {% section 'text-with-icons' %}
+
     {% section 'footer' %}
 
     <!-- INICIO SELETOR -->  
@@ -162,18 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
     <!-- FINAL SELETOR -->  
-    
-  <!-- Não remova. Checkout Yampi. -->
-{% capture yampi_snippet_content %}{% include 'YampiSnippet' %}{% endcapture %} {% unless yampi_snippet_content contains 'Liquid error' %} {% include 'YampiSnippet' %} {% endunless %}
-<!-- Não remova. Checkout Yampi. --> 
-	{{ shop.metafields.loox["global_html_body"] }}
-<!-- Don't Remove this code. CartX App code. -->
-{% capture cartX_snippet_content %}{% include 'cartxCheckoutSnippet' %}{% endcapture %} {% unless cartX_snippet_content contains 'Liquid error' %} {% include 'cartxCheckoutSnippet' %} {% endunless %}
-<!-- Don't Remove this code. CartX App code. -->
 
-{% include 'sticky-cart-by-uplinkly' %}
-    {{'source.js' | asset_url | script_tag }}
-</body>
 </html>
 
     <!-- INICIO BLOCK ALIHUNTER -->
@@ -272,4 +260,6 @@ if (window.sidebar) {
 </noscript>
 <!-- Bloquear a função: Desabilitar JS - final -->
 {% endif %}
-<!-- FIM DO BLOQUEADOR EASYCODING-->
+<!-- Não remova. Checkout Yampi. -->
+{% capture yampi_snippet_content %}{% include 'YampiSnippet' %}{% endcapture %} {% unless yampi_snippet_content contains 'Liquid error' %} {% include 'YampiSnippet' %} {% endunless %}
+<!-- Não remova. Checkout Yampi. -->

@@ -98,7 +98,7 @@
       "content": "Use a barra de busca para encontrar produtos:",
       "input_placeholder": "Buscar...",
       "no_results_with_terms": "Nenhum resultado com \"{{terms}}\" encontrado",
-      "go_back_home": "ou clique aqui para voltar à página inicial",
+      "go_back_home": "voltar à página inicial",
       "results_count": {
         "zero": "0 resultados",
         "one": "1 resultado",
@@ -172,7 +172,7 @@
       "title": "Filtrar",
       "show_filter": "Mostrar filtros",
       "select_category": "Selecionar categoria",
-      "all": "Filtros",
+      "all": "Categorias",
       "clear_all": "Limpar tudo",
       "clear": "Limpar",
       "view_results": "Ver resultados"
@@ -186,7 +186,7 @@
       "list": "Mostrar produtos em uma lista"
     },
     "product": {
-      "from_price_html": "De {{price_min}}",
+      "from_price_html": "{{price_min}}",
       "add_to_cart": "Adicionar ao Carrinho",
       "pre_order": "Pré-compra",
       "quick_view": "Ver mais",

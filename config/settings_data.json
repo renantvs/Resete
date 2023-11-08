@@ -2,12 +2,12 @@
   "current": {
     "heading_color": "#6e6e6e",
     "text_color": "#6e6e6e",
-    "accent_color": "#143a7b",
+    "accent_color": "#0046be",
     "link_color": "#04e674",
     "border_color": "#e1e3e4",
     "background": "#f7f7f7",
-    "secondary_background": "#ffffff",
-    "footer_background": "#0A1C3B",
+    "secondary_background": "#f7f7f7",
+    "footer_background": "#0046be",
     "footer_text_color": "#ffffff",
     "error_color": "#ff4646",
     "success_color": "#04e674",
@@ -15,10 +15,10 @@
     "primary_button_text_color": "#ffffff",
     "secondary_button_background": "#192c3a",
     "secondary_button_text_color": "#ffffff",
-    "header_background": "#0a1c3b",
+    "header_background": "#0046be",
     "header_text_color": "#ffffff",
     "header_light_text_color": "#d7ddff",
-    "header_accent_color": "#ffe000",
+    "header_accent_color": "#ffc005",
     "product_on_sale_accent": "#00aa00",
     "product_cor_do_preco": "#00aa00",
     "product_cor_do_preco_riscado": "#929293",
@@ -47,7 +47,7 @@
     "cart_type": "page",
     "cart_empty_button_link": "shopify:\/\/collections\/all",
     "cart_show_free_shipping_threshold": false,
-    "cart_free_shipping_threshold": "100",
+    "cart_free_shipping_threshold": "50",
     "social_facebook": "",
     "social_twitter": "",
     "social_pinterest": "",
@@ -58,7 +58,7 @@
     "social_linkedin": "",
     "social_snapchat": "",
     "social_fancy": "",
-    "favicon": "shopify:\/\/shop_images\/FAV_SITE_de750959-9c56-4a87-a617-5282c9d0da8a.png",
+    "favicon": "shopify:\/\/shop_images\/logo.favcom.png",
     "checkout_header_image": "",
     "checkout_logo_image": "",
     "checkout_logo_position": "left",
@@ -70,9 +70,10 @@
     "checkout_sidebar_background_color": "#fafafa",
     "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
-    "checkout_accent_color": "#deca27",
+    "checkout_accent_color": "#000000",
     "checkout_button_color": "#008a00",
     "checkout_error_color": "#ff0000",
+    "primary-button-background-newsletter": "#ffc005",
     "share_image": "",
     "social_google_plus": "",
     "sections": {
@@ -82,24 +83,25 @@
           "enable_sticky_header": false,
           "rastreiopage": "rastrear-pedido",
           "mostrar_barra": true,
-          "background1": "#03173b",
-          "background2": "#ffe000",
-          "background3": "#ffe000",
-          "background4": "#42647f",
-          "backgroundlocal1": "#03264e",
-          "backgroundlocal2": "#03264e",
+          "background1": "#f7f7f7",
+          "background2": "#f7f7f7",
+          "background3": "#f7f7f7",
+          "background4": "#f7f7f7",
+          "backgroundlocal1": "#0046be",
+          "backgroundlocal2": "#0046be",
           "colortextlocal": "#f7f7f7",
-          "logo_max_width": 165,
-          "mobile_logo_max_width": 85,
+          "logo": "shopify:\/\/shop_images\/logo_site_1.png",
+          "logo_max_width": 175,
+          "mobile_logo_max_width": 115,
           "show_locale_selector": true,
           "show_currency_selector": true,
           "navigation_menu": "main-menu",
           "desktop_navigation_layout": "inline",
           "desktop_navigation_open_trigger": "hover",
           "show_navigation_social_media": true,
-          "navigation_phone_number": "Telefone aqui",
-          "navigation_email": "E-mail aqui",
-          "show_condensed_search": true,
+          "navigation_phone_number": "",
+          "navigation_email": "Enviar E-mail",
+          "show_condensed_search": false,
           "show_search_filter": false,
           "search_menu": "",
           "show_search_menu_title": true
@@ -112,7 +114,7 @@
             "type": "text",
             "settings": {
               "title": "Central de atendimento",
-              "content": "<p><strong>SAC (Serviço de Atendimento ao Consumidor)<\/strong><\/p><p><strong>E-mail: <\/strong>contato@resete.com.br<br\/><strong>WhatsApp:<\/strong> +55 (99) 9 9999-9999<\/p>"
+              "content": "<p><strong>SAC (Serviço de Atendimento ao Consumidor)<\/strong><\/p><p><strong>E-mail: <\/strong>contato@resete.com.br<br\/><strong>Horário:<\/strong> Segunda a sexta de 09:00 às 18:00.<\/p>"
             }
           },
           "footer-1": {
@@ -131,7 +133,7 @@
             "type": "newsletter",
             "settings": {
               "title": "Nossas promoções",
-              "subheading": "<p>Inscreva-se para receber descontos exclusivos direto no seu <strong>e-mail<\/strong>!<\/p>"
+              "subheading": "<p>Inscreva-se e receba ofertas exclusivas direto no seu <strong>e-mail<\/strong>!<\/p>"
             }
           }
         },
@@ -143,10 +145,10 @@
         ],
         "settings": {
           "mostrar_barra": true,
-          "background1": "#03173B",
-          "background2": "#FFE000",
-          "background3": "#FFE000",
-          "background4": "#42647F",
+          "background1": "#ffe000",
+          "background2": "#ffe000",
+          "background3": "#ffe000",
+          "background4": "#ffe000",
           "show_social_media": false,
           "show_payment_icons": true,
           "show_locale_selector": true,
@@ -162,6 +164,8 @@
           "8a27046d-a7d0-4370-9d4a-92a65bed68b0": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/banner-oferta-60-off.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/banner-mobile-black-friday.jpg",
               "show_overlay": false,
               "overlay_opacity": 30,
               "text_color": "#ffffff",
@@ -171,7 +175,7 @@
               "button_background": "#ffffff",
               "button_text_color": "#000000",
               "button_text": "",
-              "link": "shopify:\/\/collections\/queridinhos-da-galera"
+              "link": "shopify:\/\/collections\/querinhos-da-galera"
             }
           }
         },
@@ -243,11 +247,11 @@
       "product-template": {
         "type": "product-template",
         "settings": {
-          "show_vendor": true,
-          "mostrar_frete_full": true,
+          "show_vendor": false,
+          "mostrar_frete_full": false,
           "mostrar_barra_de_entrega": true,
           "mostrar_mercadopago": false,
-          "show_sku": true,
+          "show_sku": false,
           "show_share_buttons": false,
           "show_taxes_included": false,
           "selector_mode": "block",
@@ -261,7 +265,7 @@
           "carousel_effect": "fade",
           "show_inventory_quantity": false,
           "low_inventory_threshold": 0,
-          "content_display_mode": "collapse_all_except_description",
+          "content_display_mode": "show_all_and_expand_description",
           "tab_page_1_handle": "politicas-de-reembolso",
           "tab_page_2_handle": "",
           "tab_page_3_handle": "",
@@ -286,8 +290,8 @@
         "type": "announcement-bar",
         "settings": {
           "show_announcement": false,
-          "background1": "#8ffca0",
-          "background2": "#0bcbfb",
+          "background1": "#0046be",
+          "background2": "#0046be",
           "text_color": "#ffffff",
           "text": "<div class=\"announcement-bar__inner\">           \t<p class=\"announcement-bar__content announcement-bar__content--left\">                             <svg class=\"announcesvg\" viewbox=\"0 0 26 23\" role=\"presentation\">       <g stroke-width=\"2\" fill=\"none\" fill-rule=\"evenodd\">         <path d=\"M17 1c-2.1 0-3.9 1.1-5 2.7C10.9 2.1 9.1 1 7 1 3.7 1 1 3.7 1 7c0 6 11 15 11 15s11-9 11-15c0-3.3-2.7-6-6-6z\" stroke=\"white\"><\/path>         <path stroke=\"white\" d=\"M16 5c1.65 0 3 1.35 3 3\"><\/path>         <path stroke=\"white\" stroke-linecap=\"square\" d=\"M16 5c1.65 0 3 1.35 3 3\"><\/path>       <\/g>     <\/svg>Prezando pela sua satisfação <\/p>\n<\/div>",
           "text_position": "center",
@@ -361,15 +365,15 @@
       "static-recently-viewed-products": {
         "type": "static-recently-viewed-products",
         "settings": {
-          "show_section": false,
-          "title": "Visto recentemente:",
+          "show_section": true,
+          "title": "Vistos recentemente",
           "show_quick_buy": false
         }
       },
       "cart-template": {
         "type": "cart-template",
         "settings": {
-          "enable_order_notes": true,
+          "enable_order_notes": false,
           "show_payment_icons": true,
           "gift_wrap_product": "",
           "gift_wrap_text": "Do you want a gift wrap?",
@@ -385,12 +389,12 @@
       "static-newsletter": {
         "type": "static-newsletter",
         "settings": {
-          "show_section": false,
-          "title": "Subscribe to our newsletter",
-          "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>",
-          "subtext": "100% free, Unsubscribe any time!",
-          "background": "#1e2d7d",
-          "text": "#ffffff"
+          "show_section": true,
+          "title": "Inscreva-se!",
+          "content": "<p>Receba novidades e promoções exclusivas digitando seu e-mail abaixo.<\/p>",
+          "subtext": "",
+          "background": "#e1e3e4",
+          "text": "#192c3a"
         }
       },
       "1599682013060": {
@@ -399,7 +403,7 @@
           "448de926-3207-4f35-a169-65d5316f11d5": {
             "type": "collection",
             "settings": {
-              "collection": "exemplo",
+              "collection": "best-sellers",
               "image": "shopify:\/\/shop_images\/fashion-toronto-watch.jpg"
             }
           },
@@ -440,7 +444,7 @@
           "1520726a-8861-4aae-a4db-f08d0346bee8"
         ],
         "settings": {
-          "title": "Nossas Coleções",
+          "title": "Nossas Categorias",
           "link_title": "Ver todas",
           "link": "shopify:\/\/collections",
           "round_images": true,
@@ -466,6 +470,8 @@
           "1599689485765-0": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/RESETE.png",
+              "mobile_image": "shopify:\/\/shop_images\/117A2110-C717-4E9B-8EAB-84888E315AAB.png",
               "show_overlay": false,
               "overlay_opacity": 0,
               "text_color": "#ffffff",
@@ -475,7 +481,7 @@
               "button_background": "#ffffff",
               "button_text_color": "#000000",
               "button_text": "",
-              "link": "shopify:\/\/collections\/queridinhos-da-galera"
+              "link": "shopify:\/\/collections\/ofertas-da-semana"
             }
           }
         },
@@ -521,7 +527,7 @@
       "d8b226b7-0e92-4571-87d1-7d986c5debc0": {
         "type": "featured-collection",
         "settings": {
-          "collection": "queridinhos-da-galera",
+          "collection": "querinhos-da-galera",
           "title": "Queridinhos da Galera",
           "products_count": 6,
           "layout": "vertical",
@@ -545,8 +551,14 @@
       "1599689485765"
     ],
     "blocks": {
-      "72216968750216311117": {
-        "type": "shopify:\/\/apps\/ali-reviews-product-reviews\/blocks\/widget-popup\/bf2eea72-0400-4db1-8908-44b7418f9a88",
+      "1143683040400472741": {
+        "type": "shopify:\/\/apps\/trustoo-product-reviews-app\/blocks\/trustoo-review-switch\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "1990815452989453926": {
+        "type": "shopify:\/\/apps\/ryviu-product-reviews-qa\/blocks\/ryviu-js\/807ad6ed-1a6a-4559-abea-ed062858d9da",
         "disabled": false,
         "settings": {
         }

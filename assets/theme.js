@@ -18337,22 +18337,19 @@
 
 
       (function () {
-        // In card, elements that have a "card__section" with a [aria-expanded] attribute can be clickable to open the content
-        // of the card itself
         var documentDelegate = new Delegate(document.body);
         documentDelegate.on('click', '.expandable-content__toggle', function (item, expandableButton) {
           var parentSection = expandableButton.closest('.expandable-content');
 
           if (parentSection.getAttribute('aria-expanded') === 'true') {
-            // Previously expanded, so we have to close it
             parentSection.setAttribute('aria-expanded', 'false');
             parentSection.style['max-height'] = "".concat(parentSection.offsetHeight, "px");
-            parentSection.offsetHeight; // Use to force a redraw
+            parentSection.offsetHeight; 
 
-            parentSection.style['max-height'] = null; // Remove the attribute to let the CSS decide the max-height
+            parentSection.style['max-height'] = null; 
 
             var expandableText = expandableButton.querySelector('.expandable-content__toggle-text');
-            expandableText.innerHTML = expandableText.getAttribute('data-view-more'); // We also have to scroll back to the top to preserve scroll position
+            expandableText.innerHTML = expandableText.getAttribute('data-view-more'); 
 
             var parentCard = parentSection.closest('.card');
 
@@ -18364,9 +18361,7 @@
               });
             }
           } else {
-            // Previously collapsed, so we have to open it
-            parentSection.setAttribute('aria-expanded', 'true'); // Because the expandable button is still positioned absolutely, we need to add margin to the sibling
-            // text to account the button. It's a bit ugly and hacky but this was the simplest I've found
+            parentSection.setAttribute('aria-expanded', 'true'); 
 
             if (expandableButton.previousElementSibling) {
               expandableButton.previousElementSibling.style['margin-bottom'] = "".concat(parseInt(expandableButton.clientHeight), "px");
@@ -18407,7 +18402,7 @@
             autoFocusedElements[i].removeAttribute('autofocus');
           }
         }
-      })();
+      })();*/
 
       (function () {
         var documentDelegate = new Delegate(document.body);

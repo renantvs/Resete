@@ -404,7 +404,7 @@
                           {%- assign allow_collapse_description = true -%}
                         {%- endif -%}
 
-                        <div class="collection__description {% if allow_collapse_description %}expandable-content{% endif %}" aria-expanded="false">
+                        /*<div class="collection__description {% if allow_collapse_description %}expandable-content{% endif %}" aria-expanded="false">
                           <div class="rte">
                             {{ collection.description }}
                           </div>
@@ -561,11 +561,11 @@
                       {%- assign show_as_list = true -%}
                     {%- endif -%}
 
-                    <div class="product-list product-list--collection {% if has_filters %}product-list--with-sidebar{% endif %}">
+                    <div class="product-card product-list product-list--collection {% if has_filters %}product-list--with-sidebar{% endif %}">
                       {%- for product in collection.products -%}
                         {%- render 'product-item', product: product, list: show_as_list, grid_classes: grid_classes -%}
                       {%- endfor -%}
-                    </div>
+                    </div>                   
 
                     {%- render 'pagination', paginate: paginate -%}
                   {%- endif -%}

@@ -104,15 +104,38 @@
 }
       
 </style>
-<script type="text/javascript">
 
-  			$.getJSON( "https://myip.wtf/json", function(localizacao) {
-				var localclientdropmeta = localizacao['YourFuckingLocation'];
-				var regiaoclientdropmeta = localclientdropmeta.replace(", Brazil", "");
-				$("#client_name_end").html("Black Friday! Frete grátis para " + regiaoclientdropmeta + " e Região");
-		    });
-   
+<script type="text/javascript">
+  $.getJSON("https://myip.wtf/json", function (localizacao) {
+    var localclientdropmeta = localizacao['YourFuckingLocation'];
+    var regiaoclientdropmeta = localclientdropmeta.replace(", Brazil", "");
+    var text = "Black Friday! Frete grátis para " + regiaoclientdropmeta + " e Região";
+
+    var textElement = document.createElement("p"); // Criar um parágrafo para o texto
+    textElement.innerText = text; // Definir o texto no parágrafo
+    
+    document.getElementById("client_name_end").appendChild(textElement); // Adicionar o parágrafo ao elemento com ID "client_name_end"
+  });
 </script>
+
+
+
+<!--<script type="text/javascript">
+  $.getJSON("https://myip.wtf/json", function (localizacao) {
+    var localclientdropmeta = localizacao['YourFuckingLocation'];
+    var regiaoclientdropmeta = localclientdropmeta.replace(", Brazil", "");
+    var text = "Black Friday! Frete grátis para " + regiaoclientdropmeta + " e Região";
+
+    // Crie um elemento <marquee> para rolar o texto infinitamente
+    var marquee = document.createElement("marquee");
+    marquee.style.width = "100%"; 
+    marquee.setAttribute("scrollamount", "7"); 
+    marquee.innerText = text;
+    
+    document.getElementById("client_name_end").appendChild(marquee);
+  });
+</script>-->
+
 <div class="glow-subnav-template glow-mobile-subnav" id="nav-subnav-container">
     <div class="a-declarative" data-action="glow-sheet-trigger" id="nav-global-location-slot">
         <div class="nav-sprite" id="nav-packard-glow-loc-icon">
@@ -127,9 +150,26 @@
 
     </div>
 </div>
-                   <!--- FECHA CODIGO - regiao --->
+<!--- FECHA CODIGO - regiao --->
+
+
+{%- if section.settings.mostrar_barra -%}
+    
+  <div class="container-fluid color-line" style="
+    background: #0a66e6;
+    height: 1px;
+    width: 100%;">
+  </div>
+
+{%- endif -%}
+
+
+ {%- comment -%}
+{%- endcomment -%}
+
   
   <header class="header header--{{ section.settings.desktop_navigation_layout }} {% unless section.settings.show_condensed_search %}header--search-expanded{% endunless %}" role="banner">
+
     <div class="container">
       <div class="header__inner">
         {%- comment -%}
@@ -570,19 +610,25 @@
           </div>
         </div>
       </div>
+      <br>
     </div>
   </header>
 
-  {%- if section.settings.desktop_navigation_layout == 'inline' and navigation_menu.links.size > 0 -%}
+  {%comment%}
+
+{%- if section.settings.desktop_navigation_layout == 'inline' and navigation_menu.links.size > 0 -%}
    <nav class="nav-bar">
      <div class="nav-bar__inner" style="text-align: center; color: var(--header-text-color);">
        <div class="container">
          <ul class="nav-bar__linklist list--unstyled" data-type="menu">
-           <i class="fa fa-bars" style="margin-right: 10px; color: var(--header-text-color);" aria-hidden="true"></i>
+           <i class="fa fa-bars" style="margin-right: 10px; color: var(--header-text-color);" aria-hidden="true"></i> 
              {%- for link in navigation_menu.links -%}
-              <li class="nav-bar__item">
+              <li class="nav-bar__item"> 
                 {%- if link.links.size == 0 -%}
-                  <a href="{{ link.url }}" class="nav-bar__link link-footer" data-type="menuitem">{{ link.title }}</a>
+                  <a href="{{ link.url }}" class="nav-bar__link title-header" data-type="menuitem">{{ link.title }}</a>
+                  <!--<a href="{{ link.url }}" class="nav-bar__link link" data-type="menuitem">{{ link.title }}</a>
+                  <a href="{{ link.url }}" class="nav-bar__link link-footer" data-type="menuitem">{{ link.title }}</a>-->
+                  
                 {%- else -%}
                   <a href="{{ link.url }}" class="nav-bar__link link" data-type="menuitem" aria-expanded="false" aria-haspopup="true">
                     {{- link.title -}}
@@ -600,13 +646,14 @@
       </div>
     </nav>
   {%- endif -%}
+  {%endcomment%}
 </section>
 
   {%- if section.settings.mostrar_barra -%}
   
       <div class="container-fluid color-line" style="
     background: linear-gradient(to right, {{ section.settings.background1 }}, {{ section.settings.background2 }}, {{ section.settings.background3 }}, {{ section.settings.background4 }});
-    height: 6px;
+    height: 2px;
     width: 100%;">
       </div>
   

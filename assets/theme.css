@@ -43,7 +43,8 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #b7b7b7;
+  background: linear-gradient(180deg, #ffe000, #ffc005, #ffaf24);
+  /*background: #6E6E6E;*/
   border: .25em solid var(--background);
   border-radius: 100vw;
 }
@@ -881,7 +882,7 @@ html {
     padding: 0;
 }
 #badges-product .badge .badge-text .highlight-text {
-    color: #2c68c8;
+    color: #0046BE;
 }
 
 
@@ -2302,7 +2303,7 @@ img.lazyload[data-sizes=auto] {
   display: inline-block;
   padding: 0 30px;
   line-height: 48px;
-  border-radius: 8px;
+  border-radius: 24px;
   text-align: center;
   font-weight: var(--text-font-bolder-weight);
   font-size: var(--base-text-font-size);
@@ -2339,6 +2340,11 @@ img.lazyload[data-sizes=auto] {
 .button--extra-large {
   font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 18px));
   line-height: 60px;
+}
+
+.button--primary-newsletter {
+  background: var(--primary-button-background-newsletter);
+  color: var(--primary-button-text-color);
 }
 
 .button--primary {
@@ -2527,9 +2533,9 @@ img.lazyload[data-sizes=auto] {
  */
 
 .card {
-  position: relative;
-  margin-bottom: 18px;
-  background: var(--secondary-background);
+  border-radius: 20px;
+  box-shadow: 0 0 5px -6px #000000c4;
+  background: #ffffff !important;
 }
 
 .card__header {
@@ -2642,6 +2648,7 @@ img.lazyload[data-sizes=auto] {
 @media screen and (max-width: 640px) {
   .card {
     border-radius: 0; /* cards expand full-width on mobile */
+    background: #ffffff !important;
   }
 
   .card__section--flex .button {
@@ -2672,8 +2679,9 @@ img.lazyload[data-sizes=auto] {
 
 @media screen and (min-width: 641px) {
   .card {
-    margin-bottom: 30px;
-    border-radius: 3px;
+    margin-bottom: 22px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px !important;
   }
 
   .card__header {
@@ -3348,7 +3356,7 @@ img.lazyload[data-sizes=auto] {
   margin-top: 22px;
   padding: 0 var(--mobile-container-gutter);
   box-shadow: 0 1px var(--border-color), 0 -1px var(--border-color);
-  background: var(--secondary-background);
+  background: #ffffff;
   z-index: 3;
 }
 
@@ -3884,6 +3892,18 @@ img.lazyload[data-sizes=auto] {
  * --------------------------------------------------------------------
  */
 
+ .product-card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+  background: #ffff !important;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 1; /* This is needed to create a new stacking context to improve performance on iOS */
+ }
+
 .product-list {
   position: relative;
   display: flex;
@@ -4015,7 +4035,8 @@ img.lazyload[data-sizes=auto] {
   }
 
   .product-list--scrollable .product-item {
-    border: 1px solid var(--border-color);
+    /*border: 1px solid var(--border-color);*/
+    border: none;
   }
 
   .product-list--scrollable .product-item + .product-item {
@@ -4036,12 +4057,12 @@ img.lazyload[data-sizes=auto] {
 }
 
 @media screen and (min-width: 1000px) {
-  /* This needs to be done instead of applying a border to the product-list to fix a z-index issue with the product labels */
+  
   .product-list::before {
     position: absolute;
-    content: "";
+    /*content: "";*/
     width: 100%;
-    height: calc(100% + 0px); /* This solves an issue on Safari, where 100% does not always work - likely a pixel rounding issue - */
+    height: calc(100% + 0px); 
     border: 1px solid var(--border-color);
     z-index: 1;
     pointer-events: none;
@@ -4201,7 +4222,7 @@ img.lazyload[data-sizes=auto] {
 
 .collection-item {
   display: inline-block;
-  width: 36vw;
+  width: 38vw;
   margin: 0 14px;
   vertical-align: top;
   white-space: normal;
@@ -4435,7 +4456,7 @@ img.lazyload[data-sizes=auto] {
 .form__field {
   display: block;
   padding: 12px 28px;
-  border-radius: 8px;
+  border-radius: 24px;
   border: 1px solid var(--form-border-color);
   width: 100%;
   line-height: normal;
@@ -4514,7 +4535,7 @@ img.lazyload[data-sizes=auto] {
 .form__submit {
   display: block;
   margin-top: 20px;
-  background: #ffe000;
+  background: #ffc005;
 }
 
 .form__submit--tight {
@@ -5308,6 +5329,11 @@ select::-ms-expand {
  * --------------------------------------------------------------------
  */
 
+ .title-header {
+  color: #FFFF;
+  font-size: 14px;
+ }
+
 .header {
   position: relative;
   padding: 13px 0;
@@ -5707,7 +5733,7 @@ select::-ms-expand {
   display: flex;
   height: 44px;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 22px;
   background: var(--secondary-background);
   color: var(--text-color);
   z-index: 1;
@@ -5801,12 +5827,12 @@ select::-ms-expand {
 
 .search-bar__submit {
   flex: none;
-    width: 65px;
+    width: 60px;
     background: var(--header-accent-color);
-    height: 80%;
+    height: 93%;
     color: var(--header-text-color);
-    border-radius: 8px;
-    margin: 4px;
+    border-radius: 22px;
+    margin: 2px;
 }
 
 .search-bar__submit svg {
@@ -7059,12 +7085,19 @@ select::-ms-expand {
     top: 0;
     background: var(--header-background);
   }
-
+  
   .nav-bar__item {
     position: relative;
     display: inline-block;
     margin-right: 35px;
-    padding: 17px 0;
+    padding: 5px 0;
+    top: -25px;
+  }
+
+  .fa-bars{
+    top: -25px;
+    position: relative;
+    padding: -25px 0;
   }
 
   .nav-bar__item--static {
@@ -8609,8 +8642,8 @@ select::-ms-expand {
 
   .product-form__payment-container > * {
     flex: none;
-    line-height: 62px!important;
-    width: calc(92%);
+    line-height: 64px!important;
+    width: calc(96%);
     border-radius: 10px;
     margin: auto;
   }
@@ -8795,9 +8828,9 @@ select::-ms-expand {
 
 .product-label {
   display: inline-block;
-  padding: 4px 10px;
+  padding: 5px 13px;
   color: #ffffff;
-  border-radius: 3px;
+  border-radius: 13px;
   font-weight: var(--text-font-bolder-weight);
   font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 13px));
   line-height: 1;
@@ -8830,6 +8863,12 @@ select::-ms-expand {
  */
 .price-list {
   line-height: 1;
+}
+
+.primary--price {
+  font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 24px));
+  color: var(--product-cor-do-preco);
+  font-weight: 1000 !important;
 }
 
 .price {
@@ -9209,11 +9248,28 @@ select::-ms-expand {
   padding: 20px;
   min-width: 0;
   flex-shrink: 0;
-  background: var(--secondary-background);
   white-space: normal;
+  background: #ffffff;
+  transform: scale(.97);
+  box-shadow: 4px 11px 15px -20px;
+  border-radius: 12px !important;
 }
 
-.product-item::after {
+/*.product-item {
+  position: relative;
+  padding: 20px;
+  min-width: 0;
+  flex-shrink: 0;
+  white-space: normal;
+  background: #ffffff;
+  transform: scale(.95);
+  box-shadow: 0 0 8px -6px #0046be;
+  border-radius: 12px !important;
+  border: 1px solid var(--border-color);
+}
+*/
+
+/*.product-item::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -9221,10 +9277,10 @@ select::-ms-expand {
   left: 0;
   top: 0;
   box-shadow: 1px 0 var(--border-color), 0 1px var(--border-color);
-  z-index: 2; /* needed to overlap the labels (if any) */
+  z-index: 2; 
   pointer-events: none;
-  /*border-radius: 20px !important;  altera a borda do card pagina inicial*/
-}
+  border-radius: 20px !important;
+}*/
 
 .product-item__image-wrapper {
   display: block;
@@ -9242,7 +9298,7 @@ select::-ms-expand {
 .product-item__label-list {
   position: absolute;
   top: 11px;
-  left: -1px;
+  left: 11px !important;
   z-index: 2;
   font-size: 0;
 }
@@ -9250,7 +9306,7 @@ select::-ms-expand {
 .product-item__label-list > .product-label {
   display: block;
   margin-bottom: 5px;
-  border-radius: 0 3px 3px 0;
+  border-radius: 13px 13px 13px 13px;
 }
 
 .product-item__info {
@@ -10373,10 +10429,11 @@ select::-ms-expand {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #143A7B;
+  background: #0046be;
+  /*background: #143A7B;*/
   height: 6px;
   border-radius: 20px;
-  width: 100px;
+  width: 140px;
   margin-top: -2px
 }
 
@@ -13526,7 +13583,7 @@ select::-ms-expand {
 
 .parcelamento span b{
 	font-size: 15px;
-  	color: #000;
+  color: #000;
 }
 
 .price--highlight .product-label.product-label--on-sale{
@@ -13735,7 +13792,7 @@ input.qtyplus, input.qtyminus {
 }
 
 .price.price--highlight, .shipping-preview-line font{
-	font-weight: 1000;
+	font-weight: 700;
     letter-spacing: -1px;
 }
 
@@ -13773,3 +13830,30 @@ input.qtyplus, input.qtyminus {
     line-height: normal!important;
     margin-bottom: 10px;
 }
+.fretefundo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .fretefundo {
+  margin: 18px 1px 30px;
+  background: none;
+  border-radius: 50px;
+  border: 2px solid #00bd58;
+  padding: 7px 11px 7px 18px;
+  }
+  .ttl-frete {
+  flex-grow: 1;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  color: var(--text-color);
+  }
+  .txt-frete {
+  font-size: 12px;
+  color: #00bd58;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  }
