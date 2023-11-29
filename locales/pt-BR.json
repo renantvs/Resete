@@ -62,7 +62,7 @@
     "search": {
       "open_search": "Abrir busca",
       "close_search": "Fechar",
-      "input_placeholder": "Pesquisar...",
+      "input_placeholder": "O que está buscando?",
       "all_categories": "Todas as categorias",
       "no_results": "Nenhum resultado encontrado",
       "submit": "Pesquisar",
@@ -187,10 +187,10 @@
     },
     "product": {
       "from_price_html": "{{price_min}}",
-      "add_to_cart": "Adicionar ao Carrinho",
+      "add_to_cart": "Comprar agora",
       "pre_order": "Pré-compra",
       "quick_view": "Ver mais",
-      "choose_options": "Escolha entre as opções",
+      "choose_options": "Escolher opções",
       "sold_out": "Esgotado",
       "in_stock": "Em estoque",
       "oversell_stock": "Em reabastecimento",

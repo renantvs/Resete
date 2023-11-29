@@ -11,11 +11,22 @@ If the product contains the special __gift tag, we prevent it to be completely a
   {% section 'ali-reviews-review-box' %}
   {% section 'product-recommendations' %}
   {% section 'static-promotion-list' %}
-  {% section 'static-recently-viewed-products' %}
+  <!--{% section 'static-recently-viewed-products' %}-->
 
   <script>
     window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)};
     ShopifyXR('addModels', {{ product.media | where: 'media_type', 'model' | json }});
   </script>
 {%- endif -%} 
+
+<!-- RYVIU APP :: WIDGET -->
+<div class="lt-block-reviews"> 
+	<ryviu-widget handle="{{product.handle}}" product_id="{{product.id}}" title_product="{{product.title}}" image_product="{{ product.featured_image.src | img_url: '100x' }}"></ryviu-widget>
+</div>
+<!-- / RYVIU APP -->
+
+{% section 'static-recently-viewed-products' %}
+
+<script src="https://cdn.ryviu.com/v/static/js/app.js?shop=c3bdc9.myshopify.com"></script>
+
  <div id="shopify-ali-review" product-id="{{ product.id }}"> {{ shop.metafields.review_collector.review_code }} </div>

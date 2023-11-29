@@ -1,17 +1,17 @@
 {
   "current": {
-    "heading_color": "#6e6e6e",
-    "text_color": "#6e6e6e",
+    "heading_color": "#1b1b1b",
+    "text_color": "#1e1b1b",
     "accent_color": "#0046be",
-    "link_color": "#04e674",
+    "link_color": "#04d06e",
     "border_color": "#e1e3e4",
     "background": "#f7f7f7",
     "secondary_background": "#f7f7f7",
     "footer_background": "#0046be",
     "footer_text_color": "#ffffff",
     "error_color": "#ff4646",
-    "success_color": "#04e674",
-    "primary_button_background": "#00aa00",
+    "success_color": "#04d06e",
+    "primary_button_background": "#04d06e",
     "primary_button_text_color": "#ffffff",
     "secondary_button_background": "#192c3a",
     "secondary_button_text_color": "#ffffff",
@@ -19,18 +19,18 @@
     "header_text_color": "#ffffff",
     "header_light_text_color": "#d7ddff",
     "header_accent_color": "#ffc005",
-    "product_on_sale_accent": "#00aa00",
-    "product_cor_do_preco": "#00aa00",
+    "product_on_sale_accent": "#04d06e",
+    "product_cor_do_preco": "#04d06e",
     "product_cor_do_preco_riscado": "#929293",
-    "product_in_stock_color": "#04e674",
+    "product_in_stock_color": "#04d06e",
     "product_low_stock_color": "#ff4646",
-    "product_sold_out_color": "#04e674",
-    "product_label_1_background": "#04e674",
-    "product_label_2_background": "#04e674",
+    "product_sold_out_color": "#04d06e",
+    "product_label_1_background": "#04d06e",
+    "product_label_2_background": "#04d06e",
     "product_star_color": "#ffbd00",
     "base_text_font_size": 15,
-    "heading_font": "poppins_n5",
-    "text_font": "din_next_n4",
+    "heading_font": "poppins_n4",
+    "text_font": "poppins_n4",
     "underline_links": true,
     "animation_image_zoom": true,
     "search_mode": "product,article",
@@ -83,10 +83,10 @@
           "enable_sticky_header": false,
           "rastreiopage": "rastrear-pedido",
           "mostrar_barra": true,
-          "background1": "#f7f7f7",
-          "background2": "#f7f7f7",
-          "background3": "#f7f7f7",
-          "background4": "#f7f7f7",
+          "background1": "#d7ddff",
+          "background2": "#ffc005",
+          "background3": "#ffe000",
+          "background4": "#afdcd2",
           "backgroundlocal1": "#0046be",
           "backgroundlocal2": "#0046be",
           "colortextlocal": "#f7f7f7",
@@ -175,7 +175,7 @@
               "button_background": "#ffffff",
               "button_text_color": "#000000",
               "button_text": "",
-              "link": "shopify:\/\/collections\/querinhos-da-galera"
+              "link": "shopify:\/\/collections\/queridinhos-da-galera"
             }
           }
         },
@@ -289,11 +289,11 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "show_announcement": false,
+          "show_announcement": true,
           "background1": "#0046be",
           "background2": "#0046be",
           "text_color": "#ffffff",
-          "text": "<div class=\"announcement-bar__inner\">           \t<p class=\"announcement-bar__content announcement-bar__content--left\">                             <svg class=\"announcesvg\" viewbox=\"0 0 26 23\" role=\"presentation\">       <g stroke-width=\"2\" fill=\"none\" fill-rule=\"evenodd\">         <path d=\"M17 1c-2.1 0-3.9 1.1-5 2.7C10.9 2.1 9.1 1 7 1 3.7 1 1 3.7 1 7c0 6 11 15 11 15s11-9 11-15c0-3.3-2.7-6-6-6z\" stroke=\"white\"><\/path>         <path stroke=\"white\" d=\"M16 5c1.65 0 3 1.35 3 3\"><\/path>         <path stroke=\"white\" stroke-linecap=\"square\" d=\"M16 5c1.65 0 3 1.35 3 3\"><\/path>       <\/g>     <\/svg>Prezando pela sua satisfação <\/p>\n<\/div>",
+          "text": "<div class=\"announcement-bar__inner\">\n    <p class=\"announcement-bar__content announcement-bar__content--left\">\n        <svg class=\"announcesvg\" viewbox=\"0 0 24 24\" fill=\"white\" role=\"presentation\">\n            <path d=\"M12 0C7.94 0 4 3.94 4 8.08c0 6.7 8 15.92 8 15.92s8-9.22 8-15.92C20 3.94 16.06 0 12 0zm0 11a3.15 3.15 0 0 1-3.17-3.08c0-1.72 1.4-3.12 3.17-3.12s3.17 1.4 3.17 3.12A3.15 3.15 0 0 1 12 11z\"><\/path>\n        <\/svg>\n        Frete grátis para todo o Brasil\n    <\/p>\n<\/div>",
           "text_position": "center",
           "link": "",
           "show_newsletter": false,
@@ -310,20 +310,20 @@
       "text-with-icons": {
         "type": "text-with-icons",
         "blocks": {
+          "text-with-icons-3": {
+            "type": "item",
+            "settings": {
+              "icon": "bi-secure-payment",
+              "title": "Compra Segura",
+              "content": "<h6>Ambiente seguro para pagamento e proteção de dados com tecnologia SSL.<\/h6>"
+            }
+          },
           "text-with-icons-0": {
             "type": "item",
             "settings": {
               "icon": "bi-delivery",
               "title": "Frete Grátis",
-              "content": "<p>Receba seu pedido no conforto da sua casa com entrega garantida e segurada pelos Correios.<\/p>"
-            }
-          },
-          "text-with-icons-1": {
-            "type": "item",
-            "settings": {
-              "icon": "bi-returns",
-              "title": "Satisfação ou Reembolso",
-              "content": "<p>Os pedidos possuem código de rastreio e você recebe todas as atualizações em seu e-mail e WhatsApp.<\/p>"
+              "content": "<h6>Envio para todo o Brasil com qualidade e segurança pelos Correios.<\/h6>"
             }
           },
           "text-with-icons-2": {
@@ -331,23 +331,23 @@
             "settings": {
               "icon": "bi-customer-support",
               "title": "Suporte Profissional",
-              "content": "<p>Contamos com um time qualificada e pronto para te atender. Segunda a Sexta de 09:00 às 18:00.<\/p>"
+              "content": "<h6>Atendimento online              de Segunda a Sexta 09:00 às<strong> <\/strong>18:00.<\/h6>"
             }
           },
-          "text-with-icons-3": {
+          "text-with-icons-1": {
             "type": "item",
             "settings": {
-              "icon": "bi-secure-payment",
-              "title": "Compra Segura",
-              "content": "<p>Ambiente seguro para pagamento e proteção de dados com tecnologia SSL.<\/p>"
+              "icon": "bi-returns",
+              "title": "Satisfação ou Reembolso",
+              "content": "<h6>Caso fique insatisfeito, devolvemos o seu dinheiro.<\/h6>"
             }
           }
         },
         "block_order": [
+          "text-with-icons-3",
           "text-with-icons-0",
-          "text-with-icons-1",
           "text-with-icons-2",
-          "text-with-icons-3"
+          "text-with-icons-1"
         ],
         "settings": {
           "show_section": true,
@@ -417,14 +417,14 @@
           "2211acca-51d0-400a-90d4-443f047eb83a": {
             "type": "collection",
             "settings": {
-              "collection": "utilidades",
+              "collection": "casa-e-utilidades",
               "image": "shopify:\/\/shop_images\/flatlay-of-jade-face-roller-laying-on-a-grey-stone.jpg"
             }
           },
           "cc9d507d-c934-41cd-b8f7-3777a2cef834": {
             "type": "collection",
             "settings": {
-              "collection": "programacao",
+              "collection": "eletronicos",
               "image": "shopify:\/\/shop_images\/portrait-of-illuminated-laptop.jpg"
             }
           },
@@ -464,38 +464,6 @@
           "link_url": ""
         }
       },
-      "1599689485765": {
-        "type": "slideshow",
-        "blocks": {
-          "1599689485765-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/RESETE.png",
-              "mobile_image": "shopify:\/\/shop_images\/117A2110-C717-4E9B-8EAB-84888E315AAB.png",
-              "show_overlay": false,
-              "overlay_opacity": 0,
-              "text_color": "#ffffff",
-              "title": "",
-              "content": "",
-              "content_position": "middle_center",
-              "button_background": "#ffffff",
-              "button_text_color": "#000000",
-              "button_text": "",
-              "link": "shopify:\/\/collections\/ofertas-da-semana"
-            }
-          }
-        },
-        "block_order": [
-          "1599689485765-0"
-        ],
-        "settings": {
-          "edge_to_edge": false,
-          "section_size": "preserve_ratio",
-          "carousel_effect": "slide",
-          "autoplay": true,
-          "cycle_speed": 5
-        }
-      },
       "search-template": {
         "type": "search-template",
         "settings": {
@@ -527,7 +495,7 @@
       "d8b226b7-0e92-4571-87d1-7d986c5debc0": {
         "type": "featured-collection",
         "settings": {
-          "collection": "querinhos-da-galera",
+          "collection": "queridinhos-da-galera",
           "title": "Queridinhos da Galera",
           "products_count": 6,
           "layout": "vertical",
@@ -547,8 +515,7 @@
       "slideshow",
       "1599689131328",
       "1599682013060",
-      "d8b226b7-0e92-4571-87d1-7d986c5debc0",
-      "1599689485765"
+      "d8b226b7-0e92-4571-87d1-7d986c5debc0"
     ],
     "blocks": {
       "1143683040400472741": {

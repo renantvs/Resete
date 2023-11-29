@@ -86,7 +86,7 @@
                     </div>
                   </div>
                 {%- else -%}
-                  <div class="card__header">
+                  <div class="card__header" style="text-align: center;">
                     <h2 class="card__title heading h3">{{ 'product.general.description' | t }}</h2>
                   </div>
 
@@ -361,15 +361,15 @@
       
        <!-- BOTÃO FLUTUANTE -->
 
-            	<div id="scrollToTop" class="botaoflutuante">        
-      		<span class="button button--primary" id="clicar" data-action="add-to-cart">{{ 'product.form.add_to_cart' | t }}</span>
-          
-          <script>
-            $("#clicar").on("click", function() {
-              $(".product-form__add-button").trigger("click");
-            });
-          </script>
-    	</div>
+      <div id="scrollToTop" class="botaoflutuante">        
+       <span class="button-checkout button--primary" id="clicar" data-action="add-to-cart">{{ 'product.form.add_to_cart' | t }}</span>
+       
+        <script>
+          $("#clicar").on("click", function() {
+            $(".product-form__add-button").trigger("click");
+          });
+        </script>
+      </div>
 
        <!-- BOTÃO FLUTUANTE -->
       

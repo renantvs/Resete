@@ -34,5 +34,11 @@
  * }));
  */
 
-
+if (window.matchMedia("(max-width: 768px)").matches) {
+    window.onscroll = function() {
+    var pageOffset = document.documentElement.scrollTop || document.body.scrollTop,
+        btn = document.getElementById('scrollToTop');
+    if (btn) btn.style.display = pageOffset > 900 ? 'block' : 'none';
+  }
+} 
 
