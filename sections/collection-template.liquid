@@ -363,7 +363,7 @@
                 </div>
               </div>
             {%- else -%}
-              <div class="card {% if collection.products_count == 0 %}clearfix{% endif %}">
+              <div class="card card-collection {% if collection.products_count == 0 %}clearfix{% endif %}">
                 <header class="card__header {% unless collection.template_suffix == 'brand' %}card__header--tight{% endunless %}">
                   {%- comment -%}
                   IMPLEMENTATION NOTE: unfortunately I was forced to add a lot of extra div (collection__meta, collection__meta-inner, collection__header-inner,...)

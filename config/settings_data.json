@@ -83,16 +83,16 @@
           "enable_sticky_header": false,
           "rastreiopage": "rastrear-pedido",
           "mostrar_barra": true,
-          "background1": "#d7ddff",
+          "background1": "#ffc005",
           "background2": "#ffc005",
-          "background3": "#ffe000",
-          "background4": "#afdcd2",
+          "background3": "#ffc005",
+          "background4": "#ffc005",
           "backgroundlocal1": "#0046be",
           "backgroundlocal2": "#0046be",
           "colortextlocal": "#f7f7f7",
           "logo": "shopify:\/\/shop_images\/logo_site_1.png",
           "logo_max_width": 175,
-          "mobile_logo_max_width": 115,
+          "mobile_logo_max_width": 135,
           "show_locale_selector": true,
           "show_currency_selector": true,
           "navigation_menu": "main-menu",
@@ -114,7 +114,7 @@
             "type": "text",
             "settings": {
               "title": "Central de atendimento",
-              "content": "<p><strong>SAC (Serviço de Atendimento ao Consumidor)<\/strong><\/p><p><strong>E-mail: <\/strong>contato@resete.com.br<br\/><strong>Horário:<\/strong> Segunda a sexta de 09:00 às 18:00.<\/p>"
+              "content": "<p><strong>SAC (Serviço de Atendimento ao Consumidor)<\/strong><\/p><p><strong>E-mail: <\/strong>contato@resete.com.br<br\/><strong>Horário:<\/strong> De domingo a domingo.<\/p>"
             }
           },
           "footer-1": {
@@ -145,10 +145,10 @@
         ],
         "settings": {
           "mostrar_barra": true,
-          "background1": "#ffe000",
-          "background2": "#ffe000",
-          "background3": "#ffe000",
-          "background4": "#ffe000",
+          "background1": "#ffc005",
+          "background2": "#ffc005",
+          "background3": "#ffc005",
+          "background4": "#ffc005",
           "show_social_media": false,
           "show_payment_icons": true,
           "show_locale_selector": true,
@@ -164,8 +164,8 @@
           "8a27046d-a7d0-4370-9d4a-92a65bed68b0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner-oferta-60-off.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/banner-mobile-black-friday.jpg",
+              "image": "shopify:\/\/shop_images\/banner-oferta-de-natal.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/banner-oferta-de-natal-mobile.jpg",
               "show_overlay": false,
               "overlay_opacity": 30,
               "text_color": "#ffffff",
@@ -175,12 +175,30 @@
               "button_background": "#ffffff",
               "button_text_color": "#000000",
               "button_text": "",
-              "link": "shopify:\/\/collections\/queridinhos-da-galera"
+              "link": "shopify:\/\/collections\/ofertas-de-natal"
+            }
+          },
+          "3450c79b-92e2-4426-a166-a034c920f299": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner-frete-gratis.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/banner-frete-gratis-mobile.png",
+              "show_overlay": false,
+              "overlay_opacity": 30,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#ffffff",
+              "button_text_color": "#000000",
+              "button_text": "",
+              "link": ""
             }
           }
         },
         "block_order": [
-          "8a27046d-a7d0-4370-9d4a-92a65bed68b0"
+          "8a27046d-a7d0-4370-9d4a-92a65bed68b0",
+          "3450c79b-92e2-4426-a166-a034c920f299"
         ],
         "settings": {
           "edge_to_edge": false,
@@ -289,11 +307,11 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "show_announcement": true,
+          "show_announcement": false,
           "background1": "#0046be",
           "background2": "#0046be",
-          "text_color": "#ffffff",
-          "text": "<div class=\"announcement-bar__inner\">\n    <p class=\"announcement-bar__content announcement-bar__content--left\">\n        <svg class=\"announcesvg\" viewbox=\"0 0 24 24\" fill=\"white\" role=\"presentation\">\n            <path d=\"M12 0C7.94 0 4 3.94 4 8.08c0 6.7 8 15.92 8 15.92s8-9.22 8-15.92C20 3.94 16.06 0 12 0zm0 11a3.15 3.15 0 0 1-3.17-3.08c0-1.72 1.4-3.12 3.17-3.12s3.17 1.4 3.17 3.12A3.15 3.15 0 0 1 12 11z\"><\/path>\n        <\/svg>\n        Frete grátis para todo o Brasil\n    <\/p>\n<\/div>",
+          "text_color": "#f7f7f7",
+          "text": "<div class=\"announcement-bar__inner\">\n    <p class=\"announcement-bar__content announcement-bar__content--left\">\n        <svg class=\"announcesvg\" viewbox=\"0 0 24 24\" fill=\"white\" role=\"presentation\">\n            <path d=\"M12 0C7.94 0 4 3.94 4 8.08c0 6.7 8 15.92 8 15.92s8-9.22 8-15.92C20 3.94 16.06 0 12 0zm0 11a3.15 3.15 0 0 1-3.17-3.08c0-1.72 1.4-3.12 3.17-3.12s3.17 1.4 3.17 3.12A3.15 3.15 0 0 1 12 11z\"><\/path>\n        <\/svg>\n        Frete grátis para todo o Brasil!\n    <\/p>\n<\/div>",
           "text_position": "center",
           "link": "",
           "show_newsletter": false,
@@ -389,7 +407,7 @@
       "static-newsletter": {
         "type": "static-newsletter",
         "settings": {
-          "show_section": true,
+          "show_section": false,
           "title": "Inscreva-se!",
           "content": "<p>Receba novidades e promoções exclusivas digitando seu e-mail abaixo.<\/p>",
           "subtext": "",
@@ -404,35 +422,42 @@
             "type": "collection",
             "settings": {
               "collection": "best-sellers",
-              "image": "shopify:\/\/shop_images\/fashion-toronto-watch.jpg"
+              "image": "shopify:\/\/shop_images\/collections-R.png"
             }
           },
           "ce738d80-b98d-49e7-8f36-994db944b02b": {
             "type": "collection",
             "settings": {
               "collection": "acessorios",
-              "image": "shopify:\/\/shop_images\/makeup-and-jewelry.jpg"
+              "image": "shopify:\/\/shop_images\/collections-E.png"
             }
           },
           "2211acca-51d0-400a-90d4-443f047eb83a": {
             "type": "collection",
             "settings": {
               "collection": "casa-e-utilidades",
-              "image": "shopify:\/\/shop_images\/flatlay-of-jade-face-roller-laying-on-a-grey-stone.jpg"
+              "image": "shopify:\/\/shop_images\/collections-S.png"
             }
           },
           "cc9d507d-c934-41cd-b8f7-3777a2cef834": {
             "type": "collection",
             "settings": {
               "collection": "eletronicos",
-              "image": "shopify:\/\/shop_images\/portrait-of-illuminated-laptop.jpg"
+              "image": "shopify:\/\/shop_images\/collections-E.png"
             }
           },
           "1520726a-8861-4aae-a4db-f08d0346bee8": {
             "type": "collection",
             "settings": {
               "collection": "jogos",
-              "image": "shopify:\/\/shop_images\/sale-tag.jpg"
+              "image": "shopify:\/\/shop_images\/collections-T.png"
+            }
+          },
+          "ab2c1dd9-2e08-45de-a7c9-d14a67fb8d1e": {
+            "type": "collection",
+            "settings": {
+              "collection": "beleza-e-saude",
+              "image": "shopify:\/\/shop_images\/collections-E.png"
             }
           }
         },
@@ -441,10 +466,11 @@
           "ce738d80-b98d-49e7-8f36-994db944b02b",
           "2211acca-51d0-400a-90d4-443f047eb83a",
           "cc9d507d-c934-41cd-b8f7-3777a2cef834",
-          "1520726a-8861-4aae-a4db-f08d0346bee8"
+          "1520726a-8861-4aae-a4db-f08d0346bee8",
+          "ab2c1dd9-2e08-45de-a7c9-d14a67fb8d1e"
         ],
         "settings": {
-          "title": "Nossas Categorias",
+          "title": "",
           "link_title": "Ver todas",
           "link": "shopify:\/\/collections",
           "round_images": true,
@@ -456,7 +482,7 @@
         "settings": {
           "collection": "ofertas-da-semana",
           "title": "Ofertas da Semana",
-          "products_count": 6,
+          "products_count": 5,
           "layout": "vertical",
           "stack_desktop": false,
           "show_quick_buy": false,
@@ -498,7 +524,7 @@
           "collection": "queridinhos-da-galera",
           "title": "Queridinhos da Galera",
           "products_count": 6,
-          "layout": "vertical",
+          "layout": "collage",
           "stack_desktop": false,
           "show_quick_buy": false,
           "link_title": "Ver todos",
@@ -513,17 +539,11 @@
     },
     "content_for_index": [
       "slideshow",
-      "1599689131328",
       "1599682013060",
+      "1599689131328",
       "d8b226b7-0e92-4571-87d1-7d986c5debc0"
     ],
     "blocks": {
-      "1143683040400472741": {
-        "type": "shopify:\/\/apps\/trustoo-product-reviews-app\/blocks\/trustoo-review-switch\/c8f15077-6475-4e86-ad06-b66038d5ba2c",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "1990815452989453926": {
         "type": "shopify:\/\/apps\/ryviu-product-reviews-qa\/blocks\/ryviu-js\/807ad6ed-1a6a-4559-abea-ed062858d9da",
         "disabled": false,

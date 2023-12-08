@@ -488,9 +488,9 @@
              {%- for link in navigation_menu.links -%}
               <li class="nav-bar__item"> 
                 {%- if link.links.size == 0 -%}
-                  <a href="{{ link.url }}" class="nav-bar__link title-header" data-type="menuitem">{{ link.title }}</a>
-                  <!--<a href="{{ link.url }}" class="nav-bar__link link" data-type="menuitem">{{ link.title }}</a>
-                  <a href="{{ link.url }}" class="nav-bar__link link-footer" data-type="menuitem">{{ link.title }}</a>-->
+                  <!--<a href="{{ link.url }}" class="nav-bar__link title-header" data-type="menuitem">{{ link.title }}</a>-->
+                  <!--<a href="{{ link.url }}" class="nav-bar__link link" data-type="menuitem">{{ link.title }}</a>-->
+                  <a href="{{ link.url }}" class="nav-bar__link link-footer" data-type="menuitem">{{ link.title }}</a>
                   
                 {%- else -%}
                   <a href="{{ link.url }}" class="nav-bar__link link" data-type="menuitem" aria-expanded="false" aria-haspopup="true">
