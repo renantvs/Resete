@@ -2,7 +2,7 @@
   "current": {
     "heading_color": "#2b2929",
     "text_color": "#2b2929",
-    "accent_color": "#ff7a00",
+    "accent_color": "#020f19",
     "link_color": "#04d06e",
     "border_color": "#e1e3e4",
     "background": "#f7f7f7",
@@ -11,7 +11,7 @@
     "footer_text_color": "#ffffff",
     "error_color": "#ff4646",
     "success_color": "#04d06e",
-    "primary_button_background": "#04d06e",
+    "primary_button_background": "#ff7a00",
     "primary_button_text_color": "#ffffff",
     "secondary_button_background": "#192c3a",
     "secondary_button_text_color": "#ffffff",
@@ -164,8 +164,8 @@
           "8a27046d-a7d0-4370-9d4a-92a65bed68b0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner-oferta-de-natal.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/banner-oferta-de-natal-mobile.jpg",
+              "image": "shopify:\/\/shop_images\/banner-smart-d20-fone-bluetooth-natal.png",
+              "mobile_image": "shopify:\/\/shop_images\/banner-smartwatch-fone-natal-mobile.png",
               "show_overlay": false,
               "overlay_opacity": 30,
               "text_color": "#ffffff",
@@ -175,7 +175,7 @@
               "button_background": "#ffffff",
               "button_text_color": "#000000",
               "button_text": "",
-              "link": "shopify:\/\/collections\/ofertas-de-natal"
+              "link": "shopify:\/\/products\/smartwatch-d20-fone-bluetooth-i7s"
             }
           }
         },
@@ -404,42 +404,42 @@
             "type": "collection",
             "settings": {
               "collection": "best-sellers",
-              "image": "shopify:\/\/shop_images\/collections-R.png"
+              "image": "shopify:\/\/shop_images\/1.jpg"
             }
           },
           "ce738d80-b98d-49e7-8f36-994db944b02b": {
             "type": "collection",
             "settings": {
               "collection": "acessorios",
-              "image": "shopify:\/\/shop_images\/collections-E.png"
+              "image": "shopify:\/\/shop_images\/2.jpg"
             }
           },
           "2211acca-51d0-400a-90d4-443f047eb83a": {
             "type": "collection",
             "settings": {
               "collection": "casa-e-utilidades",
-              "image": "shopify:\/\/shop_images\/collections-S.png"
+              "image": "shopify:\/\/shop_images\/3.jpg"
             }
           },
           "cc9d507d-c934-41cd-b8f7-3777a2cef834": {
             "type": "collection",
             "settings": {
               "collection": "eletronicos",
-              "image": "shopify:\/\/shop_images\/collections-E.png"
+              "image": "shopify:\/\/shop_images\/2.jpg"
             }
           },
           "1520726a-8861-4aae-a4db-f08d0346bee8": {
             "type": "collection",
             "settings": {
               "collection": "jogos",
-              "image": "shopify:\/\/shop_images\/collections-T.png"
+              "image": "shopify:\/\/shop_images\/4.jpg"
             }
           },
           "ab2c1dd9-2e08-45de-a7c9-d14a67fb8d1e": {
             "type": "collection",
             "settings": {
               "collection": "beleza-e-saude",
-              "image": "shopify:\/\/shop_images\/collections-E.png"
+              "image": "shopify:\/\/shop_images\/2.jpg"
             }
           }
         },
@@ -524,8 +524,8 @@
           "ba24fa67-cd98-4a12-831b-fc84cc82cc1a-image-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner-smart-d20-fone-bluetooth-natal.png",
-              "mobile_image": "shopify:\/\/shop_images\/banner-smartwatch-fone-natal-mobile.png",
+              "image": "shopify:\/\/shop_images\/banner-oferta-de-natal.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/banner-oferta-de-natal-mobile.jpg",
               "show_overlay": false,
               "overlay_opacity": 30,
               "text_color": "#ffffff",
@@ -535,7 +535,7 @@
               "button_background": "#ffffff",
               "button_text_color": "#000000",
               "button_text": "",
-              "link": "shopify:\/\/products\/smartwatch-d20-fone-bluetooth-i7s"
+              "link": "shopify:\/\/collections\/ofertas-de-natal"
             }
           }
         },
@@ -549,12 +549,26 @@
           "autoplay": true,
           "cycle_speed": 5
         }
+      },
+      "27022ed7-e838-4905-a61a-b0a8833f5299": {
+        "type": "featured-collection",
+        "settings": {
+          "collection": "eletronicos",
+          "title": "Eletrônicos & Tecnologia",
+          "products_count": 3,
+          "layout": "horizontal",
+          "stack_desktop": false,
+          "show_quick_buy": false,
+          "link_title": "Ver todos",
+          "link_url": "shopify:\/\/collections\/eletronicos"
+        }
       }
     },
     "content_for_index": [
       "slideshow",
       "1599682013060",
       "1599689131328",
+      "27022ed7-e838-4905-a61a-b0a8833f5299",
       "ba24fa67-cd98-4a12-831b-fc84cc82cc1a",
       "d8b226b7-0e92-4571-87d1-7d986c5debc0"
     ],

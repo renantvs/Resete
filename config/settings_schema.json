@@ -42,7 +42,7 @@
         "type": "color",
         "id": "border_color",
         "label": "Bordas",
-        "default": "#e1e3e4"
+        "default": "#FF7A00"
       },
       {
         "type": "color",

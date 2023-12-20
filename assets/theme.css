@@ -135,7 +135,6 @@ img {
   height: auto;
   border-style: none;
   vertical-align: top;
-  border-radius: 8px;
 }
 
 /**
@@ -8319,13 +8318,13 @@ select::-ms-expand {
   padding: 2px;
   margin: 0 4px;
   border: 2px solid transparent;
-  border-radius: 3px;
+  border-radius: 10px;
   transition: border 0.2s ease-in-out;
   cursor: pointer;
 }
 
 .product-gallery__thumbnail.is-nav-selected {
-  border-color: var(--accent-color);
+  border-color: var(--primary-button-background);
 }
 
 .product-gallery__thumbnail.is-filtered {
@@ -8862,7 +8861,7 @@ select::-ms-expand {
 }
 
 .product-label--on-sale {
-  background: var(--product-on-sale-accent);
+  background: var(--primary-button-background);
   color: #FFFF;
 }
 
@@ -9179,8 +9178,8 @@ select::-ms-expand {
 }
 
 .block-swatch__radio:checked + .block-swatch__item {
-  box-shadow: 0 0 0 1px var(--accent-color);
-  border-color: var(--accent-color);
+  box-shadow: 0 0 0 1px var(--primary-button-background);
+  border-color: var(--primary-button-background);
   background: rgba(var(--accent-color-rgb), 0.06);
   color: var(--accent-color);
 }
@@ -9238,7 +9237,7 @@ select::-ms-expand {
 }
 
 .variant-swatch__radio:checked + .variant-swatch__item {
-  border-color: var(--accent-color);
+  border-color: var(--primary-button-background);
   border-radius: 3px;
 }
 
@@ -10456,8 +10455,7 @@ select::-ms-expand {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #FF7A00;
-  /*background: #143A7B;*/
+  background: var(--header-accent-color);
   height: 6px;
   border-radius: 20px;
   width: 140px;
@@ -10468,7 +10466,7 @@ select::-ms-expand {
   margin-left: 20px;
   flex-shrink: 0;
   font-weight: var(--text-font-bolder-weight);
-  color: var(--accent-color);
+  color: var(--header-accent-color);
 }
 
 .section__action-link svg {
@@ -13671,8 +13669,8 @@ select::-ms-expand {
 
 
 .block-swatch__radio:checked + .block-swatch__item {
-    box-shadow: 0 0 0 1px var(--accent-color);
-    border-color: var(--accent-color);
+    box-shadow: 0 0 0 1px var(--primary-button-background);
+    border-color: var(--primary-button-background);
     background: rgba(var(--accent-color-rgb), 0.06);
     color: var(--accent-color);
 }
