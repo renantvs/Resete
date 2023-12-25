@@ -898,7 +898,7 @@ html {
 
 .link:hover,
 .link:focus {
-  color: var(--accent-color);
+  color: var(--primary-button-background);
 }
 
 .link-footer {
@@ -2538,9 +2538,8 @@ img.lazyload[data-sizes=auto] {
  */
 
 .card {
-  border-radius: 20px;
-  /*box-shadow: 0 0 5px -6px #000000c4;*/
-  box-shadow: 0 0px 10px #2222;
+  /*border-radius: 20px;*/
+  box-shadow: 8px 10px 12px -20px, -5px -3px 15px -20px;
   background: #ffffff !important;
 }
 
@@ -3918,6 +3917,7 @@ img.lazyload[data-sizes=auto] {
   flex-wrap: wrap;
   overflow: hidden;
   width: 100%;
+  border-radius: 30px !important;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   z-index: 1; /* This is needed to create a new stacking context to improve performance on iOS */
@@ -4351,13 +4351,13 @@ img.lazyload[data-sizes=auto] {
 
 @media screen and (min-width: 1280px) {
   .collection-item {
-    width: 16.6666667%;
+    width: 13.6666667%;
   }
 }
 
 @media (-moz-touch-enabled: 0),(hover: hover) {
   .collection-item:hover .collection-item__title {
-    color: var(--accent-color);
+    color: var(--header-accent-color);
   }
 
   .features--animate-zoom .collection-item:hover img {
@@ -10466,7 +10466,7 @@ select::-ms-expand {
   margin-left: 20px;
   flex-shrink: 0;
   font-weight: var(--text-font-bolder-weight);
-  color: var(--header-accent-color);
+  color: var(--header-accent-color) !important;
 }
 
 .section__action-link svg {
@@ -12111,7 +12111,7 @@ select::-ms-expand {
   }
 
   .layout__section:only-child {
-    max-width: 680px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
   }

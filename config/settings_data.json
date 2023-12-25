@@ -183,7 +183,7 @@
           "8a27046d-a7d0-4370-9d4a-92a65bed68b0"
         ],
         "settings": {
-          "edge_to_edge": true,
+          "edge_to_edge": false,
           "section_size": "preserve_ratio",
           "carousel_effect": "slide",
           "autoplay": true,
@@ -404,42 +404,42 @@
             "type": "collection",
             "settings": {
               "collection": "best-sellers",
-              "image": "shopify:\/\/shop_images\/1.jpg"
+              "image": "shopify:\/\/shop_images\/best-sellers-collection.jpg"
             }
           },
           "ce738d80-b98d-49e7-8f36-994db944b02b": {
             "type": "collection",
             "settings": {
               "collection": "acessorios",
-              "image": "shopify:\/\/shop_images\/2.jpg"
+              "image": "shopify:\/\/shop_images\/acessorios-collection.jpg"
             }
           },
           "2211acca-51d0-400a-90d4-443f047eb83a": {
             "type": "collection",
             "settings": {
               "collection": "casa-e-utilidades",
-              "image": "shopify:\/\/shop_images\/3.jpg"
+              "image": "shopify:\/\/shop_images\/casa-e-utilidades-collection.jpg"
             }
           },
           "cc9d507d-c934-41cd-b8f7-3777a2cef834": {
             "type": "collection",
             "settings": {
               "collection": "eletronicos",
-              "image": "shopify:\/\/shop_images\/2.jpg"
+              "image": "shopify:\/\/shop_images\/eletronicos-collection.jpg"
             }
           },
           "1520726a-8861-4aae-a4db-f08d0346bee8": {
             "type": "collection",
             "settings": {
-              "collection": "jogos",
-              "image": "shopify:\/\/shop_images\/4.jpg"
+              "collection": "pets",
+              "image": "shopify:\/\/shop_images\/pets-collection.jpg"
             }
           },
           "ab2c1dd9-2e08-45de-a7c9-d14a67fb8d1e": {
             "type": "collection",
             "settings": {
               "collection": "beleza-e-saude",
-              "image": "shopify:\/\/shop_images\/2.jpg"
+              "image": "shopify:\/\/shop_images\/beleza-e-saude-collection.jpg"
             }
           }
         },
@@ -543,7 +543,7 @@
           "ba24fa67-cd98-4a12-831b-fc84cc82cc1a-image-1"
         ],
         "settings": {
-          "edge_to_edge": true,
+          "edge_to_edge": false,
           "section_size": "preserve_ratio",
           "carousel_effect": "slide",
           "autoplay": true,
