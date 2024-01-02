@@ -1,7 +1,7 @@
 {
   "current": {
-    "heading_color": "#2b2929",
-    "text_color": "#2b2929",
+    "heading_color": "#000000",
+    "text_color": "#000000",
     "accent_color": "#020f19",
     "link_color": "#04d06e",
     "border_color": "#e1e3e4",
@@ -16,7 +16,7 @@
     "secondary_button_background": "#192c3a",
     "secondary_button_text_color": "#ffffff",
     "header_background": "#ffffff",
-    "header_text_color": "#2b2929",
+    "header_text_color": "#000000",
     "header_light_text_color": "#d7ddff",
     "header_accent_color": "#ff7a00",
     "product_on_sale_accent": "#04d06e",
@@ -51,7 +51,7 @@
     "social_facebook": "",
     "social_twitter": "",
     "social_pinterest": "",
-    "social_instagram": "",
+    "social_instagram": "https:\/\/instagram.com\/lojaresete",
     "social_vimeo": "",
     "social_tumblr": "",
     "social_youtube": "",
@@ -83,10 +83,10 @@
           "enable_sticky_header": false,
           "rastreiopage": "rastrear-pedido",
           "mostrar_barra": true,
-          "background1": "#8b110c",
-          "background2": "#8b110c",
-          "background3": "#8b110c",
-          "background4": "#8b110c",
+          "background1": "#e1e3e4",
+          "background2": "#e1e3e4",
+          "background3": "#e1e3e4",
+          "background4": "#e1e3e4",
           "backgroundlocal1": "#0046be",
           "backgroundlocal2": "#0046be",
           "colortextlocal": "#f7f7f7",
@@ -101,7 +101,7 @@
           "show_navigation_social_media": true,
           "navigation_phone_number": "",
           "navigation_email": "Enviar E-mail",
-          "show_condensed_search": false,
+          "show_condensed_search": true,
           "show_search_filter": false,
           "search_menu": "",
           "show_search_menu_title": true
@@ -143,19 +143,22 @@
           "802f4fdb-4392-4bd5-93c0-35ba9f6ffb9c",
           "f936e8c9-3b52-4c3e-92ad-1f19d935c4ca"
         ],
+        "custom_css": [
+
+        ],
         "settings": {
           "mostrar_barra": true,
-          "background1": "#8b110c",
-          "background2": "#8b110c",
-          "background3": "#8b110c",
-          "background4": "#8b110c",
-          "show_social_media": false,
+          "background1": "#ff7a00",
+          "background2": "#ff7a00",
+          "background3": "#ff7a00",
+          "background4": "#ff7a00",
+          "show_social_media": true,
           "show_payment_icons": true,
           "show_locale_selector": true,
           "show_currency_selector": false,
-          "show_cookie_bar": false,
-          "text": "<p>Use this bar to show information about your cookie policy.<\/p>",
-          "accept_button": "Accept"
+          "show_cookie_bar": true,
+          "text": "<p>Utilizamos cookies para melhorar nosso site e sua experiência de compra. Ao continuar navegando em nosso site, <strong>você está de acordo com nossa política quando à utilização de cookies.<\/strong><\/p>",
+          "accept_button": "Entendi e Fechar"
         }
       },
       "slideshow": {
@@ -164,8 +167,8 @@
           "8a27046d-a7d0-4370-9d4a-92a65bed68b0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner-smart-d20-fone-bluetooth-natal.png",
-              "mobile_image": "shopify:\/\/shop_images\/banner-smartwatch-fone-natal-mobile.png",
+              "image": "shopify:\/\/shop_images\/banner-ofeta-d20-fone.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/banner-ofeta-d20-fone-mobile.jpg",
               "show_overlay": false,
               "overlay_opacity": 30,
               "text_color": "#ffffff",
@@ -177,10 +180,28 @@
               "button_text": "",
               "link": "shopify:\/\/products\/smartwatch-d20-fone-bluetooth-i7s"
             }
+          },
+          "5fda9cb8-22d4-4d87-9459-32cd5c4433c1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner-frete-gratis.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/banner-frete-gratis-mobile.jpg",
+              "show_overlay": false,
+              "overlay_opacity": 30,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#ffffff",
+              "button_text_color": "#000000",
+              "button_text": "",
+              "link": ""
+            }
           }
         },
         "block_order": [
-          "8a27046d-a7d0-4370-9d4a-92a65bed68b0"
+          "8a27046d-a7d0-4370-9d4a-92a65bed68b0",
+          "5fda9cb8-22d4-4d87-9459-32cd5c4433c1"
         ],
         "settings": {
           "edge_to_edge": false,
@@ -289,7 +310,7 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "show_announcement": true,
+          "show_announcement": false,
           "background1": "#8b110c",
           "background2": "#8b110c",
           "text_color": "#f7f7f7",
@@ -524,8 +545,8 @@
           "ba24fa67-cd98-4a12-831b-fc84cc82cc1a-image-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner-oferta-de-natal.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/banner-oferta-de-natal-mobile.jpg",
+              "image": "shopify:\/\/shop_images\/banner-frete-gratis.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/banner-frete-gratis-mobile.jpg",
               "show_overlay": false,
               "overlay_opacity": 30,
               "text_color": "#ffffff",
@@ -535,7 +556,7 @@
               "button_background": "#ffffff",
               "button_text_color": "#000000",
               "button_text": "",
-              "link": "shopify:\/\/collections\/ofertas-de-natal"
+              "link": ""
             }
           }
         },
@@ -562,6 +583,38 @@
           "link_title": "Ver todos",
           "link_url": "shopify:\/\/collections\/eletronicos"
         }
+      },
+      "b217281d-5ad1-4f6e-8416-96f99200f351": {
+        "type": "slideshow",
+        "blocks": {
+          "b217281d-5ad1-4f6e-8416-96f99200f351-image-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner-suporte.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/banner-suporte-mobile.jpg",
+              "show_overlay": false,
+              "overlay_opacity": 30,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#ffffff",
+              "button_text_color": "#000000",
+              "button_text": "",
+              "link": "shopify:\/\/pages\/fale-conosco"
+            }
+          }
+        },
+        "block_order": [
+          "b217281d-5ad1-4f6e-8416-96f99200f351-image-1"
+        ],
+        "settings": {
+          "edge_to_edge": false,
+          "section_size": "preserve_ratio",
+          "carousel_effect": "slide",
+          "autoplay": true,
+          "cycle_speed": 5
+        }
       }
     },
     "content_for_index": [
@@ -570,7 +623,8 @@
       "1599689131328",
       "27022ed7-e838-4905-a61a-b0a8833f5299",
       "ba24fa67-cd98-4a12-831b-fc84cc82cc1a",
-      "d8b226b7-0e92-4571-87d1-7d986c5debc0"
+      "d8b226b7-0e92-4571-87d1-7d986c5debc0",
+      "b217281d-5ad1-4f6e-8416-96f99200f351"
     ],
     "blocks": {
       "1990815452989453926": {

@@ -5745,10 +5745,10 @@ select::-ms-expand {
 .search-bar__top {
   position: relative;
   display: flex;
-  height: 39px;
+  height: 43px;
   align-items: center;
   border-radius: 22px;
-  background: var(--secondary-background);
+  background: #F1F1F1;
   color: var(--text-color);
   z-index: 1;
 }
@@ -5846,11 +5846,10 @@ select::-ms-expand {
     flex: none;
     width: 60px;
     background: var(--header-accent-color);
-    height: 93%;
-    /*color: var(--header-text-color);*/
+    height: 85%;
     color: #FFFFFF;
     border-radius: 22px;
-    margin: 2px;
+    margin: 4px;
 }
 
 .search-bar__submit svg {
@@ -12533,6 +12532,7 @@ select::-ms-expand {
 
 .cookie-bar__text {
   line-height: 1.45;
+  color: var(--heading-color);
 }
 
 .cookie-bar__button {
@@ -12557,6 +12557,7 @@ select::-ms-expand {
 
   .cookie-bar__text {
     line-height: 1.25;
+    color: var(--heading-color);
   }
 
   .cookie-bar__button {
