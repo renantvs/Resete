@@ -108,6 +108,7 @@
       <path d="M0 14h20v2H0v-2zM0 0h20v2H0V0zm0 7h20v2H0V7z" fill="currentColor" fill-rule="evenodd"></path>
     </svg>
 
+
   {%- when 'cart' -%}
     <svg class="{{ icon_class }}" viewBox="0 0 27 24" role="presentation">
       <g transform="translate(0 1)" stroke-width="2" stroke="currentColor" fill="none" fill-rule="evenodd">
@@ -116,6 +117,15 @@
         <path d="M7.31 5h18.27l-1.44 10H9.78L6.22 0H0"></path>
       </g>
     </svg>
+
+  {%- comment -%}
+  {%- when 'cart' -%}
+    <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 10px;" id="Outline" viewBox="0 0 36 24" width="37" fill="var(--header-text-color)">
+      <path d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"></path>
+      <circle cx="7" cy="22" r="2"></circle>
+      <circle cx="17" cy="22" r="2"></circle>
+    </svg>
+  {%- endcomment -%}
 
   {%- when 'big-cart' -%}
     <svg width="81" height="70" viewBox="0 0 81 70">

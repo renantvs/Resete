@@ -152,12 +152,12 @@
           "background2": "#ff7a00",
           "background3": "#ff7a00",
           "background4": "#ff7a00",
-          "show_social_media": true,
+          "show_social_media": false,
           "show_payment_icons": true,
           "show_locale_selector": true,
           "show_currency_selector": false,
           "show_cookie_bar": true,
-          "text": "<p>Utilizamos cookies para melhorar nosso site e sua experiência de compra. Ao continuar navegando em nosso site, <strong>você está de acordo com nossa política quando à utilização de cookies.<\/strong><\/p>",
+          "text": "<p>Utilizamos cookies para melhorar nosso site e sua experiência de compra. Ao continuar navegando em nosso site, <strong>você está de acordo com nossa política de utilização de cookies.<\/strong><\/p>",
           "accept_button": "Entendi e Fechar"
         }
       },
@@ -342,7 +342,7 @@
           "text-with-icons-0": {
             "type": "item",
             "settings": {
-              "icon": "bi-delivery",
+              "icon": "bi-fast-delivery",
               "title": "Frete Grátis",
               "content": "<h6>Envio para todo o Brasil com qualidade e segurança pelos Correios.<\/h6>"
             }
@@ -352,7 +352,7 @@
             "settings": {
               "icon": "bi-customer-support",
               "title": "Suporte Profissional",
-              "content": "<h6>Atendimento online              de Segunda a Sexta 09:00 às<strong> <\/strong>18:00.<\/h6>"
+              "content": "<h6>Atendimento online              de Segunda a Segunda. 24h por dia.<\/h6>"
             }
           },
           "text-with-icons-1": {
@@ -435,6 +435,13 @@
               "image": "shopify:\/\/shop_images\/acessorios-collection.jpg"
             }
           },
+          "1520726a-8861-4aae-a4db-f08d0346bee8": {
+            "type": "collection",
+            "settings": {
+              "collection": "pets",
+              "image": "shopify:\/\/shop_images\/pets-collection.jpg"
+            }
+          },
           "2211acca-51d0-400a-90d4-443f047eb83a": {
             "type": "collection",
             "settings": {
@@ -449,13 +456,6 @@
               "image": "shopify:\/\/shop_images\/eletronicos-collection.jpg"
             }
           },
-          "1520726a-8861-4aae-a4db-f08d0346bee8": {
-            "type": "collection",
-            "settings": {
-              "collection": "pets",
-              "image": "shopify:\/\/shop_images\/pets-collection.jpg"
-            }
-          },
           "ab2c1dd9-2e08-45de-a7c9-d14a67fb8d1e": {
             "type": "collection",
             "settings": {
@@ -467,9 +467,9 @@
         "block_order": [
           "448de926-3207-4f35-a169-65d5316f11d5",
           "ce738d80-b98d-49e7-8f36-994db944b02b",
+          "1520726a-8861-4aae-a4db-f08d0346bee8",
           "2211acca-51d0-400a-90d4-443f047eb83a",
           "cc9d507d-c934-41cd-b8f7-3777a2cef834",
-          "1520726a-8861-4aae-a4db-f08d0346bee8",
           "ab2c1dd9-2e08-45de-a7c9-d14a67fb8d1e"
         ],
         "settings": {
