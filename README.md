@@ -1,7 +1,7 @@
 Resete Virtual Store: An Online Shopping Platform
 
 Introduction:
-The Resete Virtual Store is an online shopping platform that has been designed and realized through the Shopify platform. This engaging and user-friendly store is accessible at https://www.resete.com.br and was developed by Renan Tavares.
+The Resete Virtual Store is an online shopping platform that has been designed and realized through the Shopify platform. This engaging and user-friendly store is accessible at https://resete.com.br and was developed by Renan Tavares.
 
 Key Features:
 
